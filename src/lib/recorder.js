@@ -30,20 +30,20 @@ export default class {
   }
 
   start () {
-    const constraints = {
-      video: false,
-      audio: {
-        channelCount: 1,
-        echoCancellation: false
-      }
-    }
+    // const constraints = {
+    //   video: false,
+    //   audio: {
+    //     channelCount: 1,
+    //     echoCancellation: false
+    //   }
+    // }
 
     this.beforeRecording && this.beforeRecording('start recording')
 
-    navigator.mediaDevices
-             .getUserMedia(constraints)
-             .then(this._micCaptured.bind(this))
-             .catch(this._micError.bind(this))
+    // navigator.mediaDevices
+    //          .getUserMedia(constraints)
+    //          .then(this._micCaptured.bind(this))
+    //          .catch(this._micError.bind(this))
 
     this.isPause     = false
     this.isRecording = true

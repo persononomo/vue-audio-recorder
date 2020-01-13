@@ -59,4 +59,22 @@
     line-height: 45px;
     box-shadow: 0 2px 5px 1px rgba(158,158,158,0.5);
   }
+
+  svg {
+    margin-bottom: 50%;
+  }
 }
+
+.ar-player {
+  width: 100%;
+
+  .ar-player-actions {
+    width: 15%;
+    display: block;
+  }
+
+  .ar-player-bar > .ar-player__progress {
+    width: 70px;
+  }
+}
+
